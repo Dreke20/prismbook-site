@@ -147,45 +147,50 @@
   <main>
     <div class="policy">
       <h1>PrismBook Privacy Policy</h1>
-      <p class="meta">Effective date: November 19, 2026<br />
-      Publisher: Dirty South Marketing Agency<br />
-      Contact: <a href="mailto:dirtysouthmarketingagency@gmail.com">dirtysouthmarketingagency@gmail.com</a></p>
+  <p class="meta">Effective date: November 19, 2026<br />
+  Publisher: Dirty South Marketing Agency<br />
+  Contact: <a href="mailto:dirtysouthmarketingagency@gmail.com">dirtysouthmarketingagency@gmail.com</a></p>
 
-      <p>This policy describes how the PrismBook Android app (“PrismBook,” “we,” or “us”) handles information. PrismBook is a booking-app preview with sample businesses. It is published by Dirty South Marketing Agency.</p>
+  <p>This policy describes how the PrismBook Android app (“PrismBook,” “we,” or “us”) handles information. PrismBook is an appointment booking app published by Dirty South Marketing Agency. Account, booking, and business data are stored in our Supabase (cloud) backend and, as a cache, on your device.</p>
 
-      <h2>Information the app stores on your device</h2>
-      <p>PrismBook keeps its data in on-device app storage (Android SharedPreferences). This can include:</p>
-      <ul>
-        <li>The sample businesses that ship with the app, plus any business profile, branding, services, staff, bookings, waitlist, walk-in, loyalty, or POS records you create or change while using it</li>
-        <li>Names, phone numbers, addresses, intake notes, and similar details you type into a booking or kiosk form</li>
-        <li>A local owner PIN used only to unlock the in-app business admin and SaaS screens</li>
-        <li>Optional cloud-connection fields (a project URL and whether an API key was entered) if you use the developer setting in admin</li>
-      </ul>
-      <p>The first launch is pre-filled with fictional sample clients and appointments so you can try the product. Those records are not real customer accounts.</p>
-      <p>If Android backup is enabled on your device, this on-device data may be included in your device backup.</p>
+  <h2>Information we collect</h2>
+  <p>When you create an account or sign in, we collect:</p>
+  <ul>
+    <li>Email address and password (your password is sent to our authentication service to create or verify your account; we do not display it in the app)</li>
+  </ul>
+  <p>When you book, join a waitlist or walk-in queue, message a business, publish a review, or set up a storefront, we may also collect:</p>
+  <ul>
+    <li>Name and phone number</li>
+    <li>Optional service address, if a business offers mobile or on-site visits</li>
+    <li>Intake notes, waiver/signature name, appointment details, and payment-at-visit preferences (for example “deposit due at visit”)</li>
+    <li>Messages and reviews you submit</li>
+    <li>Loyalty, membership, or gift-card balances a business records for you</li>
+    <li>For owners and staff: business profile, branding, services, staff roster, schedules, and payment records they enter</li>
+  </ul>
+  <p>The current app does not ask you to enter a payment card number and does not process online card charges, Apple Pay, Google Pay, or NFC payments. If a business later records a card last-4 or in-person payment against a visit, that record is stored with the booking or customer profile.</p>
+  <p>The app also stores a local cache on your device, including your signed-in session tokens, so you can stay signed in and see a storefront offline.</p>
 
-      <h2>What we do not collect</h2>
-      <p>By default, PrismBook does not transmit bookings, customer details, payment information, or the owner PIN off your device. We do not have a user sign-up or login. We do not use advertising SDKs, analytics SDKs, or crash-reporting services in this build, and we do not sell your information.</p>
-      <p>Payments, deposits, gift cards, memberships, and the in-app point-of-sale are simulated. The app does not process real card charges and does not receive your actual payment-card number.</p>
+  <h2>How we use information</h2>
+  <p>We use this information to provide the booking app: authentication, appointment scheduling, waitlists, messaging, reviews, business administration, and customer support. We do not sell your information and we do not use advertising or analytics SDKs in this build.</p>
 
-      <h2>Optional network use</h2>
-      <p>The app has permission to use the internet. The only built-in network feature is an optional connectivity check in the business admin screens. If you paste a project URL and API key there, the app may send a request to that URL to see whether it can be reached. That check does not upload your bookings or customer records. If you never enter those credentials, this request is not made.</p>
-      <p>Reminder “test send” uses the Android notification system on your phone. It does not send SMS, WhatsApp, or email.</p>
+  <h2>Where data is stored and who can see it</h2>
+  <p>Account and app data are stored in our Supabase project and are protected with row-level access rules. A business you connect to can see the bookings, messages, and profile details associated with that business. We use HTTPS for network requests.</p>
 
-      <h2>Permissions</h2>
-      <ul>
-        <li><strong>Internet</strong> — for the optional connectivity check described above</li>
-        <li><strong>Notifications</strong> — so the app can show local booking or reminder alerts if you allow them</li>
-      </ul>
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Internet</strong> — to sign in and sync with the PrismBook backend</li>
+    <li><strong>Notifications</strong> — optional local reminders if you allow them (the app does not send SMS or WhatsApp messages)</li>
+  </ul>
 
-      <h2>Children</h2>
-      <p>PrismBook is intended for adults (18+) who are previewing a business booking tool. We do not knowingly collect personal information from children.</p>
+  <h2>Account deletion</h2>
+  <p>You can delete your account in the app: open <strong>Account</strong> (or <strong>Sign In</strong> while signed in) and choose <strong>Delete Account</strong>. This permanently removes your authentication account and associated appointments, waitlist entries, messages, reviews, and profile data from the backend, and signs you out. You can also uninstall the app to remove the on-device cache. Uninstalling alone does not delete your cloud account.</p>
+  <p>You can also request deletion without the app. See <a href="/delete-account">prismbook.dirtysouthagency.com/delete-account</a>.</p>
 
-      <h2>Your choices</h2>
-      <p>You can clear the app’s local data or uninstall PrismBook to remove information stored on the device. You can deny notification permission; the app will still open.</p>
+  <h2>Children</h2>
+  <p>PrismBook is intended for adults (18+) who are booking or running a service business. We do not knowingly collect personal information from children.</p>
 
       <h2>Changes and contact</h2>
-      <p>We may update this policy as the product changes. The effective date above will be revised when that happens. Questions: <a href="mailto:dirtysouthmarketingagency@gmail.com">dirtysouthmarketingagency@gmail.com</a>.</p>
+  <p>We may update this policy as the product changes. The effective date above will be revised when that happens. Questions: <a href="mailto:dirtysouthmarketingagency@gmail.com">dirtysouthmarketingagency@gmail.com</a>.</p>
     </div>
   </main>
   <footer>
